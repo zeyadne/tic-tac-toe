@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+    <style></style>
+  </head>
+  <body>
+    <div id="gameHolder" class="gameHolder">
+      <br />
+      <h1 id="header">Let's paly!</h1>
+      <div class="leftDiv">
+        <button id="btn" onclick="reset()">New Game</button>
+        <button onclick="saveGame()">Save Game</button>
+        <button onclick="loadGame()">Load Game</button>
+      </div>
+      <div class="middleDiv">
+        <table>
+          <tr id="row1">
+            <td onclick="xoFunc(this.id)" id="a1"></td>
+            <td onclick="xoFunc(this.id)" id="a2"></td>
+            <td onclick="xoFunc(this.id)" id="a3"></td>
+          </tr>
+          <tr id="row2">
+            <td onclick="xoFunc(this.id)" id="a4"></td>
+            <td onclick="xoFunc(this.id)" id="a5"></td>
+            <td onclick="xoFunc(this.id)" id="a6"></td>
+          </tr>
+          <tr id="row3">
+            <td onclick="xoFunc(this.id)" id="a7"></td>
+            <td onclick="xoFunc(this.id)" id="a8"></td>
+            <td onclick="xoFunc(this.id)" id="a9"></td>
+          </tr>
+        </table>
+        <br />
+        <br />
+      </div>
+      <div class="rightDiv">
+        <button onclick="backWards()">Back</button>
+        <button onclick="highScore()">Highest Score</button>
+        <span id="score"> </span>
+      </div>
+    </div>
+    <script src="./xo.js"></script>
+  </body>
+</html>

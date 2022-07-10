@@ -1,0 +1,88 @@
+@keyframes player1 {
+  50% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+}
+@keyframes player2 {
+  50% {
+    background-color: #42a5f5;
+  }
+  50% {
+    background-color: green;
+  }
+}
+
+body {
+  background-color: #301900;
+  background-image: url("./wood-pattern.png");
+}
+.gameHolder {
+  margin: auto;
+  width: 80%;
+  min-height: 850px;
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: linear-gradient(#444cf7 1px, transparent 1px),
+    linear-gradient(to right, #444cf7 1px, #e5e5f7 1px);
+  background-size: 20px 20px;
+}
+
+.gameHolder h1 {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+}
+.gameHolder button {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  width: 35%;
+  height: 55px;
+  background-color: #1454c7;
+  border-color: red;
+  border-radius: 50%;
+}
+.gameHolder td {
+  background-color: #3b5b94;
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+}
+.gameHolder img {
+  display: block;
+  margin: auto;
+}
+.rightDiv {
+  float: left;
+  width: 30%;
+}
+.rightDiv span {
+  margin: auto;
+  color: red;
+  font-size: 55px;
+  display: none;
+  text-align: center;
+  margin-top: 25px;
+  width: 35%;
+  height: 55px;
+  background-color: #1454c7;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+.middleDiv {
+  float: left;
+  width: 40%;
+}
+.middleDiv table {
+  border: 2px solid red;
+  border-collapse: collapse;
+  margin: auto;
+}
+.leftDiv {
+  float: left;
+  width: 30%;
+}
